@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+	<bean id="chatWebsocketFactory"
+		class="com.prasenjit.examples.websocketapp.servlets.ChatWebsocketFactory">
+		<property name="websocketPool" ref="websocketPool" />
+	</bean>
+	
+
+	<bean id="websocketPool" class="com.prasenjit.examples.websocketapp.pools.WebsocketPool"
+		init-method="init" >
+		<property name="inboundQ" ref="inBoundQ" />
+		<property name="MAX_POOL_SIZE" value="50"/>
+	</bean>
+	
+	<bean id="inBoundQ" class="java.util.concurrent.LinkedBlockingQueue" />
+	<bean id="outBoundQ" class="java.util.concurrent.LinkedBlockingQueue" />
+
+	<!-- <bean id="websocketChatServlet"
+		class="com.prasenjit.examples.websocketapp.servlets.WebsocketChatServlet">
+		<property name="chatWebsocketFactory" ref="chatWebsocketFactory" />
+	</bean> -->
+	
+	<bean id="websocketApp" class="com.prasenjit.examples.websocketapp.WebsocketApp" init-method="init">
+		<property name="inBoundQ" ref="inBoundQ" />
+		<property name="outBoundQ" ref="outBoundQ" />
+		<property name="noOfMsgDispatcher" value="1"/>
+		<property name="noOfMsgSender" value="1"/>
+	</bean>
+
+</beans>		

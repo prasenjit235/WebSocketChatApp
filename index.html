@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Web Socket chatting App</title>
+	 <link rel="stylesheet" href="./App/js/lib/jquery/jquery-ui-1.10.3/themes/base/jquery-ui.css" type="text/css" media="screen" />
+     <link type="text/css" href="./App/js/lib/plugins/jqueryChatBox/jquery.ui.chatbox.css" rel="stylesheet" />
+    <!--  <script type="text/javascript" src="./App/js/lib/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./App/js/lib/jquery/jquery-ui-1.10.3/ui/minified/jquery-ui.min.js"></script>
+   
+    <script type="text/javascript" src="./App/js/lib/plugins/jqueryChatBox/jquery.ui.chatbox.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          var box = null;
+          $("input[type='button']").click(function(event, ui) {
+              if(box) {
+                  box.chatbox("option", "boxManager").toggleBox();
+              }
+              else {
+                  box = $("#chat_div").chatbox({id:"chat_div", 
+                                                user:{key : "value"},
+                                                title : "test chat",
+                                                messageSent : function(id, user, msg) {
+                                                    $("#log").append(id + " said: " + msg + "<br/>");
+                                                    $("#chat_div").chatbox("option", "boxManager").addMsg(id, msg);
+                                                }});
+              }
+          });
+      });
+    </script> -->
+    <link rel="stylesheet" href="./App/css/main.css" type="text/css" media="screen"/>
+    <script data-main="./App/js/WebSocketChatApp" src="./App/js/lib/require/require.js"></script>
+</head>
+<body>
+<div id="header_container">
+    <div id="header">
+        Header Content
+    </div>
+</div>
+<div id="appContainer">
+<!-- <p>It will not work untill necessary scripts and stylesheets are
+    properly loaded, check out the code.</p>  <input type="button"
+    name="toggle" value="toggle" />
+    <div id="chat_div">
+    </div>
+    <hr />
+    <div id="log">
+    </div> -->
+</div>
+<div id="footer_container">
+    <div id="footer">
+        Footer Content
+    </div>
+</div>
+</body>
+</html>

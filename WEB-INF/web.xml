@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+  <display-name>Example</display-name>
+  
+  <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+  <!-- Declare the existence of a servlet. -->
+   
+  <servlet>
+	<servlet-name>Jersey</servlet-name>
+	<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+	<init-param>
+  		<param-name>com.sun.jersey.config.property.packages</param-name>
+		<param-value>com.prasenjit.examples.websocketapp;org.codehaus.jackson.jaxrs</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+	<servlet>
+  <servlet-name>samplewebsocketchat</servlet-name>
+  <servlet-class>com.prasenjit.examples.websocketapp.servlets.WebsocketChatServlet</servlet-class>
+  </servlet>
+  <!-- Map URLs to that servlet. -->
+    
+  <servlet-mapping>
+	<servlet-name>Jersey</servlet-name>
+	<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	
+  <servlet-mapping>
+  <servlet-name>samplewebsocketchat</servlet-name>
+  <url-pattern>/samplewebsocketchat/*</url-pattern>
+  </servlet-mapping>
+</web-app>

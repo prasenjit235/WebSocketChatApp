@@ -1,0 +1,15 @@
+<h2>
+    <span>Friends Component Title</span>
+  </h2>
+  <div class="component_content">
+    <ul class="friends">
+    {{#each loggedInUsers}}
+      <li>
+        <a  data-friend-id="{{name}}">
+          <img width="48" height="48" src="" />
+          <div class="friend_name" data-friend-id="{{name}}">{{name}}</div>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>

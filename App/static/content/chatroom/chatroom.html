@@ -1,0 +1,21 @@
+
+<div id="friend_list" class="component friend_component">
+  <h2>
+    <span>Friends Component Title</span>
+  </h2>
+  <div class="component_content">
+    <ul class="friends">
+    {{#each profiles}}
+      <li>
+        <a  data-friend-id="{{name}}">
+          <img width="48" height="48" src="" />
+          <div class="friend_name" data-friend-id="{{name}}">{{name}}</div>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+<div id="chatroom">
+<div id="chat_div"></div>
+</div>

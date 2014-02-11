@@ -1,0 +1,100 @@
+<style type="text/css">
+ 
+   body
+   {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+ 
+   div.loginblock
+   {
+     text-align:center;
+   	margin:0 auto;
+   	padding:10px;
+    width:230px;
+    border-style:solid;
+    border-width:2px;
+    border-color:#ccc;
+    border-radius:10px;
+    vertical-align: middle;
+	position: absolute;
+	top: 38%;
+	left: 45%;
+	margin-top: -50px;
+	margin-left: -50px;
+   }
+ 
+   .loginblock a:link 
+   {
+   	background-color:#a0a0a0;
+   	text-decoration:none;
+    border:solid, 1px, #ccc; 
+    padding:15px 30px; 
+    margin:0 0 20px; 
+    font-family:Arial, sans-serif; 
+    font-size:1.2em;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+   }
+ 
+   .loginblock a:hover
+   {
+   	background-color:#0b75b2;
+   	text-decoration:none;
+    border:solid, 1px, #ccc; 
+    padding:15px 30px; 
+    margin:0 0 20px; 
+    font-family:Arial, sans-serif; 
+    font-size:1.2em;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+ 
+   }
+ 
+   input {
+   	margin-bottom:0px;
+	border:0;
+	padding:10px;
+	font-size:1.3em;
+	font-family:Arial, sans-serif;
+	color:#aaa;
+	border:solid 1px #ccc;
+	margin:0 0 20px;
+	width:200px;
+    }
+ 
+    input.submit
+    {
+     border:solid 1px #ccc; 
+     padding:15px 30px; 
+     margin:0 0 20px; 
+     font-family:Arial, sans-serif; 
+	 font-size:1.2em;
+	 text-transform:uppercase;
+	 font-weight:bold;
+	 color:#333;
+	 cursor:pointer;
+    }
+ 
+   </style>
+<br />
+ 	<br />
+ 
+ <div class="loginblock">
+<!--   <form  method="get">--> 
+  <input id="username" type="text" value="" name="uname"><br>
+  <input id="password" type="password" value="" name="pword"><br>
+<!--</form> --> 
+<br />
+<a id="login" href="#">Log In</a>
+<br />
+<br />
+	<div id="statusMsg">
+	</div>
+	<br/>
+ </div>
