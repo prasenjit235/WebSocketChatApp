@@ -7,7 +7,11 @@ import java.util.concurrent.ConcurrentMap;
 
 import org.eclipse.jetty.websocket.WebSocket;
 
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class Memorizers {
 
 	private static Map<String, WebSocket> connectorIdVsWebsocket=new HashMap<String, WebSocket>();

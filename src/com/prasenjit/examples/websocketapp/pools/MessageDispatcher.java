@@ -7,7 +7,11 @@ import java.util.concurrent.Executors;
 import org.apache.log4j.Logger;
 
 import com.prasenjit.examples.websocketapp.outbound.WebsocketResponse;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class MessageDispatcher implements Runnable{
 
 	private final ExecutorService poolExecutorService = Executors

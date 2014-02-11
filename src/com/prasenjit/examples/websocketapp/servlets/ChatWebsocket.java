@@ -10,7 +10,11 @@ import org.eclipse.jetty.websocket.WebSocket.OnTextMessage;
 
 import com.prasenjit.examples.websocketapp.pools.WebsocketPool;
 import com.prasenjit.examples.websocketapp.utilities.AppUtils;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class ChatWebsocket implements WebSocket,OnBinaryMessage,OnTextMessage{
 
 	private Connection connection;

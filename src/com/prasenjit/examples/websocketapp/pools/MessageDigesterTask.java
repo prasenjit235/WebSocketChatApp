@@ -17,7 +17,11 @@ import com.prasenjit.examples.websocketapp.outbound.WebsocketResponse;
 import com.prasenjit.examples.websocketapp.utilities.AppInfo;
 import com.prasenjit.examples.websocketapp.utilities.AppInfo.RequestInfo;
 import com.prasenjit.examples.websocketapp.utilities.Memorizers;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class MessageDigesterTask implements Runnable{
 
 	private String msg;

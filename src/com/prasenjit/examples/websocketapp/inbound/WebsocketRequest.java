@@ -2,7 +2,11 @@ package com.prasenjit.examples.websocketapp.inbound;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class WebsocketRequest {
 
 	private String requestId;

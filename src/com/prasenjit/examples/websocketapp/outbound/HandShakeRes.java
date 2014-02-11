@@ -4,7 +4,11 @@ import java.util.List;
 
 import com.prasenjit.examples.websocketapp.utilities.AppInfo;
 import com.prasenjit.examples.websocketapp.utilities.AppInfo.ResponseInfo;
-
+/**
+*
+* @author prasenjit
+*
+*/
 
 public class HandShakeRes implements  WebsocketResponse{
 

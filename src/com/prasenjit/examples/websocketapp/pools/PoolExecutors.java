@@ -5,7 +5,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import com.prasenjit.examples.websocketapp.outbound.WebsocketResponse;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class PoolExecutors {
 
 	private static final ExecutorService PES = Executors

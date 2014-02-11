@@ -9,7 +9,11 @@ import org.apache.log4j.Logger;
 import com.prasenjit.examples.websocketapp.outbound.WebsocketResponse;
 import com.prasenjit.examples.websocketapp.pools.AsyncMsgSender;
 import com.prasenjit.examples.websocketapp.pools.MessageDispatcher;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class WebsocketApp {
 
 	private int noOfMsgDispatcher;

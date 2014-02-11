@@ -12,7 +12,11 @@ import org.codehaus.jackson.map.ObjectMapper;
 import com.prasenjit.examples.websocketapp.outbound.WebsocketResponse;
 import com.prasenjit.examples.websocketapp.servlets.ChatWebsocket;
 import com.prasenjit.examples.websocketapp.utilities.Memorizers;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class AsyncMsgSender implements Runnable{
 
 	private BlockingQueue<WebsocketResponse> outBoundQ;

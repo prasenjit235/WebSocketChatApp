@@ -1,5 +1,9 @@
 package com.prasenjit.examples.websocketapp.utilities;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class AppInfo {
 
 	public static enum RequestInfo {

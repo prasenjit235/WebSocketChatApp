@@ -4,7 +4,11 @@ import java.util.List;
 
 import com.prasenjit.examples.websocketapp.utilities.AppInfo.ReplyInfo;
 import com.prasenjit.examples.websocketapp.utilities.AppInfo.RequestInfo;
-
+/**
+*
+* @author prasenjit
+*
+*/
 
 public class ConnectionInitRes implements WebsocketResponse{
 

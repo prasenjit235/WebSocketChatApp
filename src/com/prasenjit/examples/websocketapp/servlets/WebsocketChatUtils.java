@@ -3,7 +3,11 @@ package com.prasenjit.examples.websocketapp.servlets;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class WebsocketChatUtils {
 
 	private static AtomicLong connectionIdGenerator=new AtomicLong(0);

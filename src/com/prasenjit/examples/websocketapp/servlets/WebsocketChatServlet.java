@@ -6,7 +6,11 @@ import org.eclipse.jetty.websocket.WebSocket;
 import org.eclipse.jetty.websocket.WebSocketServlet;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class WebsocketChatServlet extends WebSocketServlet{
 
 	/**

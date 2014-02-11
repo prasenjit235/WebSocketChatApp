@@ -8,7 +8,11 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import com.prasenjit.examples.websocketapp.outbound.ConnectionInitRes;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class AppUtils {
 
 	public static String prepareConnectInitResponse(String connectorId) {

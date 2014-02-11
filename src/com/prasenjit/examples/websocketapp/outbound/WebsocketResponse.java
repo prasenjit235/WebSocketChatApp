@@ -1,7 +1,11 @@
 package com.prasenjit.examples.websocketapp.outbound;
 
 import java.util.List;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public interface WebsocketResponse {
 
 	public int getReplyMode();

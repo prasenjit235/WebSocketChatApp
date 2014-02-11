@@ -13,7 +13,11 @@ import org.eclipse.jetty.websocket.WebSocket;
 
 import com.prasenjit.examples.websocketapp.servlets.ChatWebsocket;
 import com.prasenjit.examples.websocketapp.utilities.Memorizers;
-
+/**
+*
+* @author prasenjit
+*
+*/
 public class WebsocketPool {
 
 	private int MAX_POOL_SIZE;
