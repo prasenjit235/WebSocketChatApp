@@ -45,7 +45,7 @@ define( ['jquery',  'underscore', 'backbone', 'handlebar',
 			app_router.navigate('chatroom',{trigger: true});
 		})
 		Backbone.history.start();
-		connector.start('ws://10.8.160.246:8080/WebSocketChatApp/samplewebsocketchat');
+		connector.start('ws://localhost:8080/WebSocketChatApp/samplewebsocketchat');
 	};
 	
 	window.Map={};
